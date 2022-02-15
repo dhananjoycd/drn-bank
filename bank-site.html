@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-4 text-center">
+        <a class="no-underline hover:bg-blue-600 hover:text-white hover:p-2 mx-auto font-bold text-red-600 mx-4" href="index.html">Home</a>
+        <span class="bg-red-600 p-2 rounded text-white font-semibold text-center"> welcome to New Banking Site</span> 
+    </header>
+ <main class="w-3/4 mx-auto">
+     <!-- Balance and Transctiom -->
+     <section class="mt-8">
+         <div class="grid grid-cols-3 gap-4 text-white">
+             <div class="bg-blue-400 p-8 rounded"> 
+                 <h3 class="text-2xl"> Deposit </h3>
+                 <h4 class="text-4xl">$<span id="total-deposite">00</span></h4>
+             </div>
+             <div class="bg-red-400 p-8 rounded"> 
+                 <h3 class="text-2xl"> Withdraw </h3>
+                 <h4 class="text-4xl">$<span id="total-withdraw">00</span></h4>
+             </div>
+             <div class="bg-green-400 p-8 rounded"> 
+                 <h3 class="text-2xl"> Balance </h3>
+                 <h4 class="text-4xl">$<span id="total-balance">500</span></h4>
+             </div>
+             
+         </div>
+     </section>
+<!-- Deposit and Withdraw -->
+<section class="bg-blue-100 mt-5 rounded">
+    <div class="grid grid-cols-2 gap-4 p-2">
+
+     <div class="bg-green-200 rounded p-4">
+
+         <h2 class="text-center mb-4  border-b-2 p-2 font-bold text-2xl text-black-600 border-blue-500">Please Input Your Deposite Money</h2>
+
+        <div>
+            <input id="deposit-input" class="w-3/4 mx-auto block mb-4 p-1 rounded border" type="number" name=""placeholder="Input Your deposit amount in $">
+    
+            <button id="deposit-button" class="w-3/4 mx-auto block mb-4  p-1 rounded border bg-green-600 text-white font-bold"  > Deposit </button>
+          </div>
+     </div>
+
+     <div class="bg-red-200 rounded p-4">
+
+        <h2 class="text-center mb-4  border-b-2 p-2 font-bold text-2xl text-black-600 border-blue-500">Please Input Your withdraw Money</h2>
+
+        <div>
+            <input id="withdraw-input" class="w-3/4 mx-auto block mb-4 p-1 rounded border" type="number" name=""placeholder="Input Your withdraw amount in $">
+    
+            <button id="withdraw-button" class="w-3/4 mx-auto block mb-4  p-1 rounded border bg-red-600 text-white font-bold"  > Withdraw </button>
+          </div>
+     </div>
+    </div>
+
+</section>
+
+
+ </main>
+
+
+ <script>
+
+
+ </script>
+<script src="js/bakn-site.js"></script>
+</body>
+</html>
